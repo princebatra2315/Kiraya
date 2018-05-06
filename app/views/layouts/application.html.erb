@@ -42,20 +42,23 @@ margin-right:2px;}
   <% end %>
 </div>
 
-<%= yield :top_content %>
+
 
 <div class="container">
-    <h1><%= yield :header %></h1>
+    
   <div class="topnav">
   <a href="#"><img src="kir.jpg" width="100px"></a>
   <div class="navbar-right" style="line-height:2;">
       <a href="/index"><i class="fa fa-tachometer" aria-hidden="true"> Dashboard</i></a>
-      <a href="/show"><i class="fa fa-car" aria-hidden="true"> My Car</i></a>
-      <a href="#"><i class="fa fa-cart-arrow-down" aria-hidden="true"> Rent a Car</i> </a>
+      <a href=""><i class="fa fa-car" aria-hidden="true"> My Car</i></a>
+      <a href="/show"><i class="fa fa-cart-arrow-down" aria-hidden="true"> Rent a Car</i> </a>
       <a href="/users/sign_in"><i class="fa fa-sign-out" aria-hidden="true"> Sign In </i></a>
     </div>
 
 </div>
+<h1>
+  <%= yield :top_content %>
+  <%= yield :header %></h1>
  <%= yield %>
   </body>
 </html>
