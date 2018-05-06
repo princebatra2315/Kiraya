@@ -7,7 +7,32 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
+<style type="text/css">
+  .topnav {
+  overflow: hidden;
+  background-color: #b3b3b3;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 6px 12px;
+  text-decoration: none;
+  font-size: 18px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: white;
+  
+}
+.topnav a.active {
+  background-color: #2196F3;
+  text-color: red;
+}
+.topnav .navbar-right{float:left;
+margin-right:2px;}
+</style>
   <body>
     <div class="container">
   <% flash.each do |key, value| %>
@@ -21,7 +46,15 @@
 
 <div class="container">
     <h1><%= yield :header %></h1>
-  
+  <div class="topnav">
+  <a href="#"><img src="kir.jpg" width="100px"></a>
+  <div class="navbar-right" style="line-height:2;">
+      <a href="/index"><i class="fa fa-tachometer" aria-hidden="true"> Dashboard</i></a>
+      <a href="/show"><i class="fa fa-car" aria-hidden="true"> My Car</i></a>
+      <a href="#"><i class="fa fa-cart-arrow-down" aria-hidden="true"> Rent a Car</i> </a>
+      <a href="/users/sign_in"><i class="fa fa-sign-out" aria-hidden="true"> Sign In </i></a>
+    </div>
+
 </div>
  <%= yield %>
   </body>
