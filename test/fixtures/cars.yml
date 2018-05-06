@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  car_model: MyString
+  car_type: MyString
+  oil: MyString
+  state: MyString
+  date_from: 2018-05-05
+  date_to: 2018-05-05
+  time_from: 2018-05-05 23:17:59
+  time_to: 2018-05-05 23:17:59
+  renter: MyString
+  price: 1
+  mobile: MyString
+  user: one
+
+two:
+  car_model: MyString
+  car_type: MyString
+  oil: MyString
+  state: MyString
+  date_from: 2018-05-05
+  date_to: 2018-05-05
+  time_from: 2018-05-05 23:17:59
+  time_to: 2018-05-05 23:17:59
+  renter: MyString
+  price: 1
+  mobile: MyString
+  user: two

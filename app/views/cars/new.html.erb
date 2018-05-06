@@ -1,0 +1,25 @@
+<%= form_for Car.new, url: {action: :create} do |f| %>
+ 
+
+      <%= f.label :Model %>
+      <%= f.text_field :car_model,class: 'form-control' %>
+      <br>
+      
+      <%= f.label :Type %>
+       <%= f.select :car_type, [ 'Micro', 'Mini', 'Prime'], class: 'form-control'%>
+       <br>
+      <br>
+      <%= f.label :Oil %>
+      <%= f.select :oil, [ 'Petrol', 'Diesel', 'CNG'], class: 'form-control'%>
+      <br>
+      
+      <%= f.label :Phone %>
+      <%= f.text_field :mobile,class: 'form-control' %>
+      <br>
+
+      <%= f.label :Car_Number %>
+      <%= f.text_field :number,class: 'form-control' %>
+      <br>
+
+       <%= f.submit "Create Profile", class: "btn btn-primary" %>
+      <% end %>
